@@ -88,8 +88,8 @@ fig2 = px.density_heatmap(
     x='pickup_hour',
     y='dayofweek',
     z='dist_mean',
-    nbinsx=23,
-    nbinsy=7,
+    nbinsx=7,
+    nbinsy=24,
     height=400
 )
 fig2.update_layout(
