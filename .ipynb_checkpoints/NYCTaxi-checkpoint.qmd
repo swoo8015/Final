@@ -62,7 +62,7 @@ df_left = df_small.drop(pcol+dcol,axis=1)
 df_right = pd.concat([transform(df) for i, df in df_small.groupby('id')]).reset_index(drop=True)
 df_small = df_left.merge(df_right)
 
-tidydata3 = df_small2.assign(
+tidydata3 = df_small.assign(
     speed_cut = pd.qcut(df_small.speed,4, labels=['매우 느림', '조금 느림', '조금 빠름', '매우 빠름'])
 ).sort_values('speed_cut')
 
