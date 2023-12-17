@@ -11,6 +11,7 @@ execute:
 ```{python}
 #| output: false
 # 여기에 온갖코드를 넣음.
+
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -87,7 +88,7 @@ fig2 = px.density_heatmap(
     x='pickup_hour',
     y='dayofweek',
     z='dist_mean',
-    nbinsx=24,
+    nbinsx=23,
     nbinsy=7,
     height=400
 )
